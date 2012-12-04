@@ -1,9 +1,9 @@
-/* This file is auto generated, version 1 */
+/* This file is auto generated, version 7 */
 /*  PREEMPT */
 #define UTS_MACHINE "arm"
-#define UTS_VERSION "#1 PREEMPT Tue Oct 9 21:28:00 YEKT 2012"
-#define LINUX_COMPILE_TIME "21:28:00"
-#define LINUX_COMPILE_BY "sanya"
-#define LINUX_COMPILE_HOST "sanya-Aspire-5741ZG"
+#define UTS_VERSION "#7 PREEMPT Sun Nov 25 21:16:53 MSK 2012"
+#define LINUX_COMPILE_TIME "21:16:53"
+#define LINUX_COMPILE_BY "sanek"
+#define LINUX_COMPILE_HOST "desk"
 #define LINUX_COMPILE_DOMAIN "(none)"
 #define LINUX_COMPILER "gcc version 4.4.0 (GCC) "
