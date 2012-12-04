@@ -371,9 +371,6 @@ int register_sound_special_device(const struct file_operations *fops, int unit,
 		break;
 	    case 1:
 		name = "sequencer";
-		if (unit >= SOUND_STEP)
-			goto __unknown;
-		max_unit = unit + 1;
 		break;
 	    case 2:
 		name = "midi";
@@ -386,9 +383,6 @@ int register_sound_special_device(const struct file_operations *fops, int unit,
 		break;
 	    case 8:
 		name = "sequencer2";
-		if (unit >= SOUND_STEP)
-			goto __unknown;
-		max_unit = unit + 1;
 		break;
 	    case 9:
 		name = "dmmidi";
@@ -415,6 +409,7 @@ int register_sound_special_device(const struct file_operations *fops, int unit,
 		}
 		break;
 	}
+		max_unit = unit + 1;
 	return sound_insert_unit(&chains[chain], fops, -1, unit, max_unit,
 				 name, S_IRUSR | S_IWUSR, dev);
 }
